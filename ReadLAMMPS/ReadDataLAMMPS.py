@@ -75,12 +75,14 @@ def searchmatrix(keywords,lines,nline,ncolumn):
         variable = variable[~np.all(variable == 0, axis=1)]
         if ncolumn == 0:
             # remove null columns 
-            nullcolumn = np.all(variable != 0, axis=0)
+            nullcolumn = np.all(variable == 0, axis=0)
             for idx in range(len(nullcolumn)):
-                status = np.all(variable.T[idx]);
+                status = nullcolumn[idx]
+                #status = np.all(variable.T[idx]);
                 if status == True:
-                    col = idx;
-                variable = variable.T[0:col+1]
+                    #col = idx;
+                    variable = variable.T[0:idx]
+                #variable = variable.T[0:col+1]
         else : 
             variable = variable.T
     else:
