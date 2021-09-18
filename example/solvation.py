@@ -6,7 +6,7 @@ from WriteDataLAMMPS import *
 # reading lammps data file
 print('Reading lammps data file(s) ...')
 Solute = 'go_opls_long.data'
-Solvent = 'water_TIP4P_long.data'
+Solvent = 'water_tip4p_long.data'
 
 SoluteData = readdatalammps(Solute,'full')
 SolventData = readdatalammps(Solvent,'full')
