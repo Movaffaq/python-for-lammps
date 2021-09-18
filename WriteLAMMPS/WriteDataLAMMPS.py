@@ -1,5 +1,5 @@
-def write(data):   
-    f = open("data.lammps", "w")
+def write(data,name):   
+    f = open(name, "w")
     f.write('# LAMMPS data file \n\n')
     f.write(str(data.Natoms)+' atoms\n')
     f.write(str(data.Nbonds)+' bonds\n')
