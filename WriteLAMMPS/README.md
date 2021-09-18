@@ -6,6 +6,6 @@ This code is in development. Work with atom style 'full' only.
 
 from WriteDataLAMMPS import *
 
-datafile = 'mydata.lammps'
+name = 'data.lammps'
 
-write(datafile)
+write(datafile,name)
