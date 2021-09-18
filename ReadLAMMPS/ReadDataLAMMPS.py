@@ -26,7 +26,7 @@ def searchvariable(keywords,type_variable,lines):
         data=(search(keywords, lines))
         if len(data)>0:
             data=(search(keywords, lines)[0][0:-1].replace(keywords,''));
-            variable=re.findall(r'\d+\.\d+', data);
+            variable=re.findall('-?\d+\.?\d*', data);
         else:
             variable=0;
             
