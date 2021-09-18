@@ -24,7 +24,7 @@ lx = 10 # size for the waterbox
 ly = 10 # size for the waterbox
 lz = 10 # size for the waterbox
 d = 2.8 # distance between solute and solvent
-solvated = hydrate(SoluteData,SolventData,lx,ly,lz,d)
+solvated = hydrate(SoluteData,SolventData,lx,ly,lz,d,check_dim=True,center=True)
 print('Solvating is finished.')
 
 # writing lammps data file
