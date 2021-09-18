@@ -19,7 +19,7 @@ print('Importing lammps data file(s) is finished.')
 #Init_Atoms,Init_Bonds, Init_Angles, Lx, Ly, Lz = main_replicate(datafile, Replicate)
 
 # solvation
-print('Initiat solvation that make take while ...')
+print('Initiat solvation that may take while ...')
 lx = 10 # size for the waterbox
 ly = 10 # size for the waterbox
 lz = 10 # size for the waterbox
