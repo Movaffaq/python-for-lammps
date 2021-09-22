@@ -5,6 +5,7 @@ from WriteDataLAMMPS import *
 
 # reading lammps data file
 print('Reading lammps data file(s) ...')
+print('Note! the lammps data file(s) must be space separated and using tab(s) raise error!')
 Solute = 'go_opls_long.data'
 Solvent = 'water_tip4p_long.data'
 
