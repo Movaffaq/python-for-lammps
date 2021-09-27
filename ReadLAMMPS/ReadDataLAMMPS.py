@@ -62,7 +62,8 @@ def searchmatrix(keywords,lines,nline,ncolumn):
                 data = [x for x in temp if x];
                 if len(data) > 0:
                     if len(data) > ncolumn: #to remove the three additional columns that sometimes appear
-                        variable[i][0:len(data)] = data[0:7]
+                        #variable[i][0:len(data)] = data[0:7]
+                        variable[i][0:ncolumn] = data[0:ncolumn]
                         i += 1
                     else:
                         variable[i][0:len(data)] = data 
